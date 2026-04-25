@@ -4,11 +4,11 @@ public class Cliente {
     private String dni;
     private String correo;
 
-    public Cliente(int id, String nombre, String dni, String correo) {
-        this.id = id;
-        this.nombre = nombre;
-        setDni(dni);
-        setCorreo(correo);
+    public Cliente(int _id, String _nombre, String _dni, String _correo) {
+        this.id = _id;
+        this.nombre = _nombre;
+        setDni(_dni);
+        setCorreo(_correo);
     }
 
     public int getId() {

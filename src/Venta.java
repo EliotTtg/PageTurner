@@ -15,7 +15,7 @@ public class Venta {
     private Libro libro;
     private EstadoVenta estado;
 
-    public Venta(int id, Date fecha, int cantidad, Cliente cliente, Libro libro) {
+    public Venta(int _id, Date _fecha, int _cantidad, Cliente _cliente, Libro _libro) {
 
         if (cantidad <= 0) {
             throw new IllegalArgumentException("Cantidad inválida");
@@ -25,11 +25,11 @@ public class Venta {
             throw new IllegalArgumentException("Cliente y libro no pueden ser nulos");
         }
 
-        this.id = id;
-        this.fecha = fecha;
-        this.cantidad = cantidad;
-        this.cliente = cliente;
-        this.libro = libro;
+        this.id = _id;
+        this.fecha = _fecha;
+        this.cantidad = _cantidad;
+        this.cliente = _cliente;
+        this.libro = _libro;
         this.estado = EstadoVenta.PENDIENTE;
     }
 

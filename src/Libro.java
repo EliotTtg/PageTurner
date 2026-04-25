@@ -7,14 +7,14 @@ public class Libro {
     private int stock;
     private int totalVentas;
 
-    public Libro(int id, String titulo, String autor, String isbn, double precio, int stock) {
-        this.id = id;
-        this.titulo = titulo;
-        this.autor = autor;
-        this.isbn = isbn;
+    public Libro(int _id, String _titulo, String _autor, String _isbn, double _precio, int _stock) {
+        this.id = _id;
+        this.titulo = _titulo;
+        this.autor = _autor;
+        this.isbn = _isbn;
         this.totalVentas = 0;
-        setStock(stock);
-        setPrecio(precio);
+        setStock(_stock);
+        setPrecio(_precio);
     }
 
     public boolean hayStock(int cantidad) {
